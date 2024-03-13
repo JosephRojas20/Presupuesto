@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Sofia&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Sofia|Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    margin: 0px;
+}
+#encabezado{
+    background: url(fondo.png), radial-gradient(
+        circle at 50% 0,
+        rgba(255, 0, 0, 0.5),
+        rgba(255, 0, 0, 0) 70.71%
+    ),
+    radial-gradient(
+        circle at 6.7% 75%,
+        rgba(0, 0, 255, 0.5),
+        rgba(0, 0, 255, 0) 70.71%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(0, 255, 0, 0.5),
+        rgba(0, 255, 0, 0) 70.71%
+    ) beige;
+    text-align: center;
+    padding-bottom: 17px;
+}
+.Presupuesto{
+    font-family: "Rowdies", sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+#Presupuesto--Numero{
+    font-family: "Roboto Serif", serif;
+    font-weight: bold;
+    font-size: 46px;
+    padding-top: 10px;
+}
+.Contenido-Ingreso, .Contenido-Egreso{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contenido{
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+    background-color: #28B9B5;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid rgb(15, 75, 25);
+}
+.Ingreso-Texto, .Egreso-Texto{
+    font-weight: bold;
+}
+.Ingreso-Texto, #Ingreso-Valor{
+    padding: 5px;
+    font-size: 17px;
+}
+#Ingreso-Valor:hover, #Egreso-Valor:hover{
+    font-weight: bold;
+}
+#Egreso-Valor,
+#Porcentaje {
+    display: inline;
+}
+.Contenido-Egreso2{
+    background-color: #FF5049;
+    display: flex;
+    width: 24%;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 1px;
+    padding-right: 5px;
+    border: 2px solid #460810;
+}
+.Contenido1{
+    padding-top: 11px;
+}
+#Porcentaje{
+    background-color: tomato;
+    border-radius: 5px;
+    padding: 5px;
+}
+.Egreso-Texto{
+    padding: 10px;
+}
+.Formulario{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(199, 192, 192, 0.219);
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+#Valor, #Descripcion, #ValorNumero{
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid grey;
+    margin: auto;
+}
+#Valor:focus, #Descripcion:focus, #ValorNumero:focus{
+    outline: none;
+    padding: 10px ;
+    border-radius: 5px;
+    border: 2px solid #28B9B5;
+}
+.formato{   
+    padding: 10px;
+    margin-bottom: 3px;
+}
+.boton{
+    font-size: 25px;
+    padding: 10px;
+    margin: 0 4px;
+    border: none;
+    background-color: transparent;
+    vertical-align: -3px;
+    cursor: pointer;
+}
+.boton:hover{
+    color: rgb(27, 57, 224);
+}
+.Forma{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(221, 236, 235);
+}
+.psuedo-elemento::before{
+    content: "";
+    display: block;
+    height: 30px;
+}
+.Ingresos-Egresos{
+    width: inherit;
+}
+.formatoBloques{
+    display: flex;
+    justify-content: space-around;
+}
+.formatoBloques .bloqueIngresos h1:first-of-type
+{
+    text-decoration: underline;
+    margin-left: 80px;
+    color: #1b7572;
+}
+.formatoBloques .bloqueEgresos h1:first-of-type{
+    text-decoration: underline;
+    margin-left: 80px;
+    color: #b83c37;
+}
+.cabeceraPrincipal{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+#video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+.cabeceraFlex{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    z-index: 1;
+}
+#Fecha-Reloj{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #b83c37;
+    border-top: 2px solid #1b7572;
+    color: white;
+}
+.animacion{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #1b7572 !important;
+    border-top: 2px solid #b83c37 !important;
+}
+.menuOpciones {
+    position: relative;
+    background-color: transparent;
+    width: auto; 
+    padding: 0;
+    overflow: hidden;
+
+}
+.links:hover{
+    background-color: rgb(77, 143, 173);
+    border-bottom: 3px solid rgb(216, 209, 209);
+}
+
+div.menuOpciones ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menuOpciones li {
+    padding: 10px;
+    position: relative;
+}
+.menuOpciones li a {
+    text-decoration: none;
+    color: white;
+    display: flex; 
+    align-items: center;
+    padding: 10px; 
+}
+.menuOpciones-container {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%; 
+    margin-top: 6px;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    padding-left: 0px;
+}
+
+.subcontForm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloqueIngresos, .bloqueEgresos{
+    padding: 10px 10px 2px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+h1{
+    margin: 0px;
+}
+.boton2 {
+    display: none;
+    font-size: 12px;
+}
+
+.subcontForm{
+    padding: 3px 0px;
+    margin-bottom: 0px;
+}
+.subcontForm:hover .boton2 {
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-size: 13px;
+}
+.contForm {
+    margin: 0px;
+}
+.bloqueIngresos .contForm,
+.bloqueEgresos .contForm {
+    margin: 0px;
+    padding: 13px;
+    width: 250px;
+}
+
+.bloqueIngresos .contForm:first-child,
+.bloqueEgresos .contForm:first-child {
+    border-top: 2px solid black;
+}
+.bloqueIngresos .contForm{
+    background-color: #28B9B5;
+}
+
+.bloqueEgresos .contForm{
+    background-color: #FF5049;
+}
